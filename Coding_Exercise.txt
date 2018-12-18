@@ -1,0 +1,15 @@
+Coding Exercise
+
+----------------------
+
+·       Write an automation script that deploys a fake smtp server on a Linux machine. The fake smtp server runs as a node app (https://www.npmjs.com/package/maildev).
+
+·       Script must install a crontab that checks if maildev server is running or not every 5 minutes.
+
+·       If maildev server is not running then the crontab job should restart it.
+
+·       All the logs for maildev server should be available on specific path.
+
+·       You should handle machine reboot cases, if machine reboots, it should start the mail dev server.
+
+·       if cron detects mail dev process is died, it should send an alert to an email address.
